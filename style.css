@@ -1,0 +1,272 @@
+:root {
+  --color0: rgb(246, 246, 246);
+  --color1: rgb(0, 81, 135);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  color: var(--color0);
+}
+body {
+  background-image: url('https://www.todofondos.net/wp-content/uploads/fondo-de-pantalla-azul-marino.jpg');
+  background-size: cover;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+header > img {
+  width: 200px;
+  border-radius: 100%;
+  margin-top: 250px;
+  transition: transform 2s;
+}
+header > img:hover {
+  transform: rotateY(360deg);
+}
+header > h1 {
+  margin-top: 20px;
+  font-size: 60px;
+  font-weight: 700;
+}
+header > h2 {
+  font-size: small;
+  color: var(--color0);
+  font-weight: 800;
+}
+header > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+header > div > a {
+  background-color: var(--color0);
+  color: var(--color1);
+  border-radius: 60px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+header > div > a:hover {
+  transform: scale(1.1);
+}
+.article1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-top: 340px;
+  gap: 60px;
+}
+
+.imgtext1 {
+  width: 400px;
+}
+.text1 {
+  width: 400px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 391px) {
+  #portafolio2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgtext1 {
+    max-width: 100%;
+  }
+  .text1 {
+    width: 320px;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+.descargarCv {
+  background-color: var(--color1);
+  color: var(--color0);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 60px;
+  text-decoration: none;
+}
+.article2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 200px;
+}
+#portafolio3 > div > img {
+  filter: grayscale(100%);
+}
+#portafolio3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+#portafolio3 > div {
+  text-align: center;
+}
+
+#portafolio3 > div > img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+#portafolio3 > div > p {
+  visibility: hidden;
+}
+#portafolio3 > div > img:hover {
+  filter: grayscale(0%);
+}
+#portafolio3 > div > img:hover + p {
+  visibility: visible;
+}
+.myStudies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 340px;
+  gap: 40px;
+}
+.myStudiesS1 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+  height: 300px;
+  text-align: center;
+  background-color: rgb(203, 203, 203);
+  border-radius: 20px;
+  padding: 20px;
+}
+.tp {
+  background-image: url('https://media.licdn.com/dms/image/D4D0BAQE1JLh6wRRrQg/company-logo_200_200/0/1695721567392/the_power_logo?e=2147483647&v=beta&t=GvXmE0As2MEtADk1ghxTS1tLzTujsacK9i6tsFs8Chw');
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+.tp:hover {
+  transform: scale(1.1);
+}
+
+.uiv {
+  background-image: url('https://fiu-original.b-cdn.net/fontsinuse.com/use-images/139/139712/139712.jpeg?filename=131348490_10157804197848715_5091021129965791091_n.jpg');
+  background-size: contain;
+  transition: transform 0.3s ease;
+}
+
+.uiv:hover {
+  transform: scale(1.1);
+}
+
+.myStudiesS1 > div > h3 {
+  width: 270px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.myStudiesS1 > div > img {
+  width: 120px;
+  border-radius: 20px;
+}
+.myStudiesS1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.myProject {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 340px;
+  gap: 20px;
+}
+.myProjectS1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.myProjectS1 > div > img {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+.myProjectS1 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.myProjectS1 > div > a {
+  text-decoration: none;
+  text-align: center;
+  width: 100px;
+  background-color: var(--color0);
+  color: var(--color1);
+  padding: 10px;
+  border-radius: 60px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  height: 200px;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer > div > h2 {
+  font-weight: 700;
+}
+footer > div > a {
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  background-color: var(--color0);
+  color: var(--color1);
+  padding: 20px;
+  border-radius: 60px;
+}
+footer > div > p {
+  text-align: center;
+  font-weight: 700;
+}
